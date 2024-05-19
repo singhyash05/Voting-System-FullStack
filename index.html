@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting-System</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" type="module"></script>
+</head>
+
+<body>
+    <h1>Voting System </h1>
+    <p>Read <a href="instructions.html" target="_blank">Instructions</a> to use voting system at bottom of the Webpage
+    </p>
+
+    <div class="connectMetamask">
+        <span>Connect Metamask :</span> <button id="connectMetamask">Connect!</button>
+    </div>
+
+    <div class="registration of ec">
+        <span>Register Yourself As Election Commision</span>
+        <button id="registerEC"> Register !</button>
+    </div>
+    <p id="registeredEC"></p>
+    <br>
+    <div class="timeforRegistration">
+        <p>Enter Max Date and Time for Registration</p>
+        <form id="dateTimeFormCandidates">
+            <label for="dateCan">Date:</label>
+            <input type="date" id="dateCan" required><br><br>
+
+            <label for="timeCan">Time:</label>
+            <input type="time" id="timeCan" required><br><br>
+
+            <button type="button" id="timestampCanButton">Enter</button>
+        </form>
+    </div>
+
+
+    <div class="registration of candidates">
+        <h4>Register yourself for Contesting in Elections</h4>
+        <form id="registrationOfCandidatesForm">
+            <label for="candidateInfo">Enter a relevant info about yourself</label>
+            <input type="text" id="candidateInfo" name="candidateInfo" required>
+            <button type="submit" id="registerCanbutton">Submit</button>
+        </form>
+        <div class="RegistrationTime">
+            <p>Registration Time:</p>
+            <div id="registrationTimeDisplay"></div>
+
+        </div>
+
+    </div>
+    <br>
+
+    <div id="displayOfCandidates">
+        <table id="candidatesTable">
+            <thead>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Candidate Info</th>
+                    <th>Address of Candidate</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <br>
+        <br>
+    </div>
+    <div class="MaxTimeForVoting">
+        <p>Enter Max Date and Time for Voting</p>
+        <form id="dateTimeFormVoting">
+            <label for="dateVOT">Date:</label>
+            <input type="date" id="dateVOT" required><br><br>
+
+            <label for="timeCan">Time:</label>
+            <input type="time" id="timeVOT" required><br><br>
+
+            <button type="button" id="timestampVOTButton">Enter</button>
+        </form>
+        <br>
+        <p>Voting Period :</p>
+        <div id="maxVotingTimeDisplay"></div>
+    </div>
+    <br>
+    <div class="vote">
+        <form id="vote">
+            <label for="votefor">Enter Serial Number for Candidate you want to Vote</label>
+            <input type="integer" id="votefor">
+            <div id="voteMessage" style="display: none; color: green;">You have voted!</div>
+
+        </form>
+    </div>
+    <br>
+    <div class="result">
+        <button id="resultButton">Results!</button>
+    </div>
+    </div class="reset">
+    <button id="resetButton">Reset</button>
+    </div>
+    <br>
+
+
+
+</body>
+
+</html>

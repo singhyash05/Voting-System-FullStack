@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    color: #444;
+    text-align: center;
+    /* Center align all h1, h2, h3 elements */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#voteMessage,
+#timestampCanButton,
+#timestampVOTButton,
+#resetButton,
+#connectMetamask,
+#registerEC,
+#resultButton {
+    margin-top: 10px;
+}
+
+#voteMessage {
+    color: green;
+    display: none;
+    /* Initially hidden */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.alert {
+    color: red;
+    font-weight: bold;
+}
+
+.corner {
+    position: fixed;
+    bottom: 10px;
+    /* Adjust distance from bottom */
+    right: 10px;
+    /* Adjust distance from right */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Transparent background */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Slight shadow */
+    padding: 10px 15px;
+    /* Padding inside the box */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.social-link {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #0073b1;
+    /* LinkedIn blue */
+    font-weight: bold;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+    color: #005582;
+    /* Darker LinkedIn blue on hover */
+}
